@@ -31,7 +31,7 @@
 
         <p class="text-center">
           <router-link v-bind:to="'/home'">
-            <button type="button" id="login-button">UPDATE MY MEMBERSHIP</button>
+            <button type="button" id="login-button" v-on:click="validateBeforeSubmit">UPDATE MY MEMBERSHIP</button>
           </router-link>
         </p>
       </form>
@@ -42,6 +42,34 @@
 
 <script>
 export default {
-  name: 'login'
+  name: 'login',
+  data: () => ({
+    email: '',
+    name: ''
+  }),
+
+  methods: {
+    validateBeforeSubmit () {
+//      beforeRouteEnter((to, from, next) => {
+//          // check if the path user is going to is our param pat
+//        if (to.path === '/home') {
+//          this.$validator.validateAll().then(result => {
+//            if (result) {
+//              // eslint-disable-next-line
+//              alert('From Submitted!')
+//              next()
+//              return
+//            }
+
+//            alert('Correct them errors!')
+//            return
+//          })
+//          next()
+//        } else {
+//          next()
+//        }
+//      })
+    }
+  }
 }
 </script>

@@ -17,7 +17,25 @@ Vue.config.productionTip = false
 
 const routes = [
 { path: '/', component: Login },
-{path: '/home', component: Home},
+  { path: '/home',
+    component: Home,
+    beforeRouteEnter (to, from, next) {
+    // check if the path user is going to is our param pat
+      if (to.path === '/home') {
+        to.$validator.validateAll().then(result => {
+          if (result) {
+        // eslint-disable-next-line
+          alert('From Submitted!')
+            next()
+            return
+          }
+
+          alert('Correct them errors!')
+          return
+        })
+      }
+    }
+  },
 {path: '/confirmation', component: Confirmation}
 ]
 
