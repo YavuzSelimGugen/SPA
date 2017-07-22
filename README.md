@@ -1,7 +1,7 @@
 # addfamily-yavuz
 
 > A Vue.js project
->Soruntesoit deneme 1
+>Soruntespit deneme 1
 ## Build Setup
 
 ``` bash
