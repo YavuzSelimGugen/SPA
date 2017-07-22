@@ -1,0 +1,1340 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+html
+{
+    font-family: sans-serif;
+
+        -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body
+{
+    margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary
+{
+    display: block;
+}
+
+audio,
+canvas,
+progress,
+video
+{
+    display: inline-block;
+
+    vertical-align: baseline;
+}
+
+audio:not([controls])
+{
+    display: none;
+
+    height: 0;
+}
+
+[hidden],
+template
+{
+    display: none;
+}
+
+a
+{
+    background-color: transparent;
+}
+
+a:active,
+a:hover
+{
+    outline: 0;
+}
+
+abbr[title]
+{
+    border-bottom: 1px dotted;
+}
+
+b,
+strong
+{
+    font-weight: bold;
+}
+
+dfn
+{
+    font-style: italic;
+}
+
+h1
+{
+    font-size: 2em;
+
+    margin: .67em 0;
+}
+
+mark
+{
+    color: #000;
+    background: #ff0;
+}
+
+small
+{
+    font-size: 80%;
+}
+
+sub,
+sup
+{
+    font-size: 75%;
+    line-height: 0;
+
+    position: relative;
+
+    vertical-align: baseline;
+}
+
+sup
+{
+    top: -.5em;
+}
+
+sub
+{
+    bottom: -.25em;
+}
+
+img
+{
+    border: 0;
+}
+
+svg:not(:root)
+{
+    overflow: hidden;
+}
+
+figure
+{
+    margin: 1em 40px;
+}
+
+hr
+{
+    box-sizing: content-box;
+    height: 0;
+}
+
+pre
+{
+    overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp
+{
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea
+{
+    font: inherit;
+
+    margin: 0;
+
+    color: inherit;
+}
+
+button
+{
+    overflow: visible;
+}
+
+button,
+select
+{
+    text-transform: none;
+}
+
+button,
+html input[type='button'],
+input[type='reset'],
+input[type='submit']
+{
+    cursor: pointer;
+
+    -webkit-appearance: button;
+}
+
+button[disabled],
+html input[disabled]
+{
+    cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner
+{
+    padding: 0;
+
+    border: 0;
+}
+
+input
+{
+    line-height: normal;
+}
+
+input[type='checkbox'],
+input[type='radio']
+{
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button
+{
+    height: auto;
+}
+
+input[type='search']
+{
+    box-sizing: content-box;
+
+    -webkit-appearance: textfield;
+}
+
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration
+{
+    -webkit-appearance: none;
+}
+
+fieldset
+{
+    margin: 0 2px;
+    padding: .35em .625em .75em;
+
+    border: 1px solid #c0c0c0;
+}
+
+legend
+{
+    padding: 0;
+
+    border: 0;
+}
+
+textarea
+{
+    overflow: auto;
+}
+
+optgroup
+{
+    font-weight: bold;
+}
+
+table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td,
+th
+{
+    padding: 0;
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 180px;
+}
+
+header .header-logo
+{
+    display: block;
+
+    width: 187px;
+    height: 71px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    margin-left: 70px;
+}
+
+header .header-logo.sh
+{
+    width: 227px;
+    height: 40px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+footer
+{
+    font-size: 10px;
+    line-height: 24px;
+
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 145px;
+    padding: 30px 0;
+
+    color: #4f5959;
+    background-color: #121212;
+}
+
+footer a
+{
+    transition: all .3s ease-in;
+    text-decoration: none;
+
+    color: #fff;
+}
+
+footer a:hover
+{
+    color: #0b85bd;
+}
+
+footer a.sh:hover
+{
+    color: #ed3125;
+}
+
+footer .column-left
+{
+    float: left;
+
+    width: 50%;
+    height: 83px;
+    padding-left: 70px;
+
+    text-align: left;
+}
+
+footer .column-right
+{
+    position: relative;
+
+    float: left;
+
+    width: 50%;
+    height: 83px;
+
+    text-align: right;
+    vertical-align: bottom;
+}
+
+footer .column-right p
+{
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+
+    margin: 0;
+    padding: 0;
+}
+
+footer .footer-logo
+{
+    width: 130px;
+    height: 50px;
+}
+
+html,
+body
+{
+    height: 100%;
+    min-height: 100%;
+}
+
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 24px;
+
+    overflow-x: hidden;
+
+    color: #4a4a4a;
+    background-color: #fff;
+}
+
+*,
+:after,
+:before
+{
+    box-sizing: border-box;
+}
+
+.site-wrapper
+{
+    position: relative;
+
+    width: 100%;
+    min-height: 100%;
+}
+
+.container
+{
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.container:after,
+.container:before
+{
+    display: table;
+
+    content: '';
+}
+
+.container:after
+{
+    clear: both;
+}
+
+h1
+{
+    font-size: 66px;
+    font-weight: 700;
+    line-height: 66px;
+
+    position: relative;
+
+    margin: 0;
+    padding: 13px 50px 13px 0;
+
+    text-align: right;
+    text-transform: uppercase;
+
+    color: #fff;
+    background-color: #0b85bd;
+}
+
+h1:after
+{
+    position: absolute;
+    z-index: 5;
+    right: 380px;
+    bottom: -60px;
+
+    display: block;
+
+    width: 0;
+    height: 0;
+
+    content: '';
+
+    border: 30px solid transparent;
+    border-top-color: #0b85bd;
+}
+
+h1.sh
+{
+    background-color: #ed3125;
+}
+
+h1.sh:after
+{
+    border-top-color: #ed3125;
+}
+
+h2
+{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+
+    margin: 0;
+    padding: 0;
+
+    text-transform: uppercase;
+
+    color: #0b85bd;
+}
+
+h2.sh
+{
+    color: #ed3125;
+}
+
+h2.with-image
+{
+    margin-top: 10px;
+}
+
+h2.with-image img
+{
+    margin-right: 20px;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.text-left
+{
+    text-align: left;
+}
+
+.text-right
+{
+    text-align: right;
+}
+
+.sh-color
+{
+    color: #ed3125;
+}
+
+main
+{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+main .container
+{
+    position: relative;
+
+    height: 100%;
+    min-height: 100%;
+    padding-top: 180px;
+    padding-bottom: 145px;
+}
+
+main .main-background
+{
+    position: fixed;
+    top: 160px;
+    bottom: 0;
+    left: 0;
+
+    width: 800px;
+
+    background-image: url('img/onelife_main_background_full.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100%;
+}
+
+main .main-content
+{
+    position: relative;
+
+    float: right;
+
+    width: 800px;
+    height: 100%;
+    padding: 50px;
+
+    background-color: rgba(255, 255, 255, .79);
+}
+
+main .main-content p
+{
+    margin: 0;
+    padding: 0;
+}
+
+main .main-content p.login-intro
+{
+    padding-right: 80px;
+
+    color: #000;
+}
+
+main .main-content p.confirmation-intro
+{
+    line-height: 29px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-right: 50px;
+
+    color: #000;
+}
+
+main .main-content p.confirmation-details
+{
+    font-size: 14px;
+    line-height: 20px;
+
+    margin-top: 25px;
+    padding-right: 40px;
+}
+
+main .main-content p.home-intro
+{
+    margin-bottom: 5px;
+    padding-right: 50px;
+
+    color: #000;
+}
+
+main .main-content p.home-totals
+{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+
+    padding-top: 10px;
+    padding-bottom: 6px;
+
+    color: #0b85bd;
+}
+
+main .main-content p.home-totals.sh
+{
+    color: #ed3125;
+}
+
+main .main-content p.home-legal
+{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+
+    padding-bottom: 30px;
+
+    color: #121212;
+}
+
+main .main-content p.home-subtitle
+{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+
+    margin-bottom: 20px;
+    padding-top: 13px;
+
+    color: #121212;
+    border-top: 1px solid #121212;
+}
+
+main .main-content p.home-regular
+{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+
+    margin-bottom: 10px;
+    padding-left: 30px;
+
+    color: #121212;
+}
+
+main .main-content p.home-legal-button
+{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+
+    padding: 20px;
+
+    color: #121212;
+    border-bottom: 1px solid #121212;
+}
+
+main .main-content p.home-checkbox-label
+{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+
+    display: block;
+
+    margin-bottom: 20px;
+    padding-left: 30px;
+
+    color: #121212;
+}
+
+main .main-content .table
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+main .main-content .table .cell
+{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+
+    display: inline-block;
+
+    padding-right: 70px;
+
+    color: #121212;
+}
+
+main .main-content .form-wrapper
+{
+    margin-top: 40px;
+}
+
+main .main-content .home-form-wrapper
+{
+    margin-top: 30px;
+}
+
+main .main-content label
+{
+    position: relative;
+
+    display: block;
+
+    margin-bottom: 18px;
+}
+
+main .main-content label .text
+{
+    font-size: 10px;
+    line-height: 12px;
+
+    display: inline-block;
+
+    width: 120px;
+    padding: 0 0 0 15px;
+
+    vertical-align: middle;
+
+    color: #7a7a7a;
+}
+
+main .main-content label .text .smaller
+{
+    font-size: 9px;
+}
+
+main .main-content input.textfield
+{
+    line-height: 36px;
+
+    display: inline-block;
+
+    width: 440px;
+    height: 36px;
+    padding: 0 15px;
+
+    vertical-align: middle;
+
+    color: #121212;
+    border: none;
+    border: 1px solid #a3a3a3;
+    outline: none;
+    background: none;
+    background-color: #fff;
+    box-shadow: none;
+
+       -moz-appearance: none;
+            appearance: none;
+    -webkit-appearance: none;
+}
+
+main .main-content input.checkbox
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+main .main-content select
+{
+    line-height: 36px;
+
+    display: inline-block;
+
+    width: 440px;
+    height: 36px;
+    padding: 0 15px;
+
+    vertical-align: middle;
+
+    color: #7a7a7a;
+    border: none;
+    border: 1px solid #a3a3a3;
+    border-radius: 0;
+    outline: none;
+    background: none;
+    background-color: #ededed;
+    box-shadow: none;
+
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+main .main-content select::-ms-expand
+{
+    display: none;
+}
+
+main .main-content button,
+main .main-content .button
+{
+    font-size: 16px;
+    line-height: 16px;
+
+    display: inline-block;
+
+    margin-top: 10px;
+    padding: 10px 20px;
+
+    transition: all .3s ease-in;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+    color: #fff;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: #0b85bd;
+    box-shadow: none;
+
+       -moz-appearance: none;
+            appearance: none;
+    -webkit-appearance: none;
+}
+
+main .main-content button:focus,
+main .main-content button:active,
+main .main-content button:hover,
+main .main-content .button:focus,
+main .main-content .button:active,
+main .main-content .button:hover
+{
+    font-size: 16px;
+    line-height: 16px;
+
+    display: inline-block;
+
+    margin-top: 10px;
+    padding: 10px 20px;
+
+    text-decoration: none;
+    letter-spacing: 1px;
+
+    color: #fff;
+    outline: none;
+    outline: none;
+    background-color: #121212;
+    box-shadow: none;
+
+       -moz-appearance: none;
+            appearance: none;
+    -webkit-appearance: none;
+}
+
+main .main-content button.larger,
+main .main-content .button.larger
+{
+    padding: 10px 35px;
+}
+
+main .main-content button.sh,
+main .main-content .button.sh
+{
+    background-color: #ed3125;
+}
+
+main .main-content button.sh:focus,
+main .main-content button.sh:active,
+main .main-content button.sh:hover,
+main .main-content .button.sh:focus,
+main .main-content .button.sh:active,
+main .main-content .button.sh:hover
+{
+    background-color: #121212;
+}
+
+main .main-content .select-wrapper .dropdown-arrow
+{
+    position: absolute;
+    top: 9px;
+    left: 530px;
+
+    color: #7b7b7b;
+}
+
+main .main-content .checkbox-wrapper
+{
+    position: relative;
+}
+
+main .main-content .checkbox-wrapper input[type=checkbox]
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    visibility: hidden;
+    overflow: hidden;
+
+    width: 0;
+    height: 0;
+}
+
+main .main-content .checkbox-wrapper input[type=checkbox]:checked + label
+{
+    border-color: transparent;
+    background-color: transparent;
+}
+
+main .main-content .checkbox-wrapper input[type=checkbox]:checked + label:after
+{
+    opacity: 1;
+}
+
+main .main-content .checkbox-wrapper label
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    cursor: pointer;
+    transition: all .3s ease-in;
+
+    border: 3px solid #a3a3a3;
+    background-color: #fff;
+}
+
+main .main-content .checkbox-wrapper label:after
+{
+    position: absolute;
+    top: 1px;
+    left: 0;
+
+    width: 14px;
+    height: 8px;
+
+    content: '';
+    transition: all .3s ease-in;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+
+    opacity: 0;
+    border: 3px solid #0b85bd;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+}
+
+main .main-content .checkbox-wrapper label.sh:after
+{
+    border-bottom-color: #ed3125;
+    border-left-color: #ed3125;
+}
+
+main .main-content .radio-wrapper
+{
+    position: relative;
+}
+
+main .main-content .radio-wrapper input[type=radio]
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    visibility: hidden;
+    overflow: hidden;
+
+    width: 0;
+    height: 0;
+}
+
+main .main-content .radio-wrapper input[type=radio]:checked + label:after
+{
+    opacity: 1;
+}
+
+main .main-content .radio-wrapper label
+{
+    position: absolute;
+    top: -1px;
+    left: -1px;
+
+    width: 22px;
+    height: 22px;
+
+    cursor: pointer;
+
+    border: 3px solid #a3a3a3;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+main .main-content .radio-wrapper label:after
+{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+
+    width: 10px;
+    height: 10px;
+
+    content: '';
+    transition: all .3s ease-in;
+
+    opacity: 0;
+    border-radius: 50%;
+    background-color: #0b85bd;
+}
+
+main .main-content .radio-wrapper label.sh:after
+{
+    background-color: #ed3125;
+}
+
+main .main-content .rule
+{
+    position: absolute;
+    right: 70px;
+    bottom: 20px;
+    left: 50px;
+
+    display: block;
+
+    height: 1px;
+
+    background-color: #000;
+}
+
+.page-confirmation main .main-content
+{
+    padding-bottom: 200px;
+}
+
+@media (max-width: 1250px)
+{
+    .container
+    {
+        width: 100%;
+    }
+
+    h1
+    {
+        font-size: 56px;
+    }
+
+    h1:after
+    {
+        right: 320px;
+    }
+
+    main .main-background
+    {
+        width: 600px;
+        margin-left: -120px;
+    }
+
+    main .main-content
+    {
+        width: 700px;
+    }
+
+    main .main-content .rule
+    {
+        right: 50px;
+    }
+}
+
+@media (max-width: 1000px)
+{
+    h1
+    {
+        font-size: 46px;
+    }
+
+    h1:after
+    {
+        right: 240px;
+    }
+
+    main .main-background
+    {
+        width: 550px;
+        margin-left: -137px;
+    }
+
+    main .main-content
+    {
+        width: 550px;
+    }
+
+    main .main-content p.login-intro
+    {
+        padding-right: 0;
+    }
+
+    main .main-content input.textfield
+    {
+        width: 350px;
+    }
+
+    main .main-content input.textfield
+    {
+        width: 320px;
+    }
+
+    main .main-content select
+    {
+        width: 350px;
+    }
+
+    main .main-content select
+    {
+        width: 320px;
+    }
+
+    main .main-content .select-wrapper .dropdown-arrow
+    {
+        left: 350px;
+    }
+
+    main .main-content .select-wrapper .dropdown-arrow
+    {
+        left: 410px;
+    }
+}
+
+@media (max-width: 850px)
+{
+    header .header-logo
+    {
+        display: inline-block;
+
+        margin-left: 0;
+    }
+
+    header
+    {
+        position: relative;
+
+        height: auto;
+
+        text-align: center;
+    }
+
+    footer .column-left
+    {
+        float: none;
+
+        width: 100%;
+        height: auto;
+        padding: 10px 50px;
+
+        text-align: center;
+    }
+
+    footer .column-right
+    {
+        float: none;
+
+        width: 100%;
+        height: auto;
+        padding: 10px 50px;
+
+        text-align: center;
+    }
+
+    footer .column-right p
+    {
+        position: relative;
+        right: auto;
+    }
+
+    footer
+    {
+        position: relative;
+
+        height: auto;
+    }
+
+    h1
+    {
+        font-size: 36px;
+        line-height: 37px;
+
+        padding: 13px 20px;
+
+        text-align: center;
+    }
+
+    h1:after
+    {
+        right: 50%;
+
+        margin-right: -30px;
+    }
+
+    h2
+    {
+        margin-bottom: 20px;
+
+        text-align: center;
+    }
+
+    main .container
+    {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    main .main-background
+    {
+        position: relative;
+        top: 0;
+
+        width: 300px;
+        height: 300px;
+        margin-top: -15px;
+        margin-left: -75px;
+    }
+
+    main .main-content
+    {
+        width: 100%;
+
+        box-shadow: 80px 0 80px rgba(0, 0, 0, .2);
+    }
+
+    main .main-content p.login-intro
+    {
+        text-align: center;
+    }
+
+    main .main-content p.confirmation-intro
+    {
+        padding-right: 0;
+
+        text-align: center;
+    }
+
+    main .main-content p.home-intro
+    {
+        padding-right: 0;
+
+        text-align: center;
+    }
+
+    main .main-content label .text
+    {
+        width: 29%;
+    }
+
+    main .main-content input.textfield
+    {
+        width: 69%;
+    }
+
+    main .main-content select
+    {
+        width: 69%;
+    }
+
+    main .main-content .select-wrapper .dropdown-arrow
+    {
+        right: 30px;
+        left: auto;
+    }
+}
+
+@media (max-width: 550px)
+{
+    h2.with-image img
+    {
+        display: block;
+
+        margin: 0 auto 10px;
+    }
+
+    h2
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    main .main-content
+    {
+        padding: 20px 20px 50px;
+    }
+
+    main .main-content .table .cell
+    {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    main .main-content label .text
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    main .main-content input.textfield
+    {
+        width: 100%;
+    }
+
+    main .main-content select
+    {
+        width: 100%;
+    }
+
+    main .main-content .select-wrapper .dropdown-arrow
+    {
+        top: auto;
+        right: 20px;
+        bottom: 8px;
+    }
+}

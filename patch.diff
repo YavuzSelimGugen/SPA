@@ -1,0 +1,136 @@
+From e0572d12bbe75fc9d13e8feaa829aaf0317fc7eb Mon Sep 17 00:00:00 2001
+From: Yavuz Selim Gugen <ygugen@windowslive.com>
+Date: Tue, 18 Jul 2017 20:50:55 +0300
+Subject: [PATCH] resolved #2
+
+---
+ src/components/Home.vue  | 26 +++++++++++++++-----------
+ src/components/Login.vue |  4 ++--
+ src/main.js              |  9 +++++----
+ 3 files changed, 22 insertions(+), 17 deletions(-)
+
+diff --git a/src/components/Home.vue b/src/components/Home.vue
+index 974fcca..a122162 100644
+--- a/src/components/Home.vue
++++ b/src/components/Home.vue
+@@ -17,7 +17,7 @@
+                   <label for="first-name">
+                     <p :class="{ 'control': true}">
+                       <div class="text text-right">FIRST NAME</div>
+-                      <input type="text"  id="first-name" class="textfield" v-validate="'required|alpha'" :class="{'input': true, 'is-danger': errors.has('alpha') }" name="alpha">
++                      <input type="text"  id="first-name" class="textfield" data-vv-as="name" v-validate="'required|alpha'" :class="{'input': true, 'is-danger': errors.has('alpha') }" name="alpha">
+                     </br>
+                       <span v-show="errors.has('alpha')" class="help is-danger">{{ errors.first('alpha') }}</span>
+                     </p>
+@@ -26,7 +26,7 @@
+                   <label for="last-name">
+                     <p :class="{ 'control': true}">
+                       <div class="text text-right">LAST NAME</div>
+-                      <input type="text" id="last-name" class="textfield" v-validate="'required|alpha'" :class="{'input': true, 'is-danger': errors.has('alpha') }" name="alpha">
++                      <input type="text" id="last-name" class="textfield" data-vv-as="name"  v-validate="'required|alpha'" :class="{'input': true, 'is-danger': errors.has('alpha') }" name="alpha">
+                     </br>
+                       <span v-show="errors.has('alpha')" class="help is-danger">{{ errors.first('alpha') }}</span>
+                     </p>
+@@ -35,7 +35,7 @@
+                   <label for="birth-date">
+                     <p :class="{ 'control': true}">
+                       <div class="text text-right">BIRTH DATE</div>
+-                      <input type="text" id="birth-date" class="textfield" v-validate="'required|date_format:DD-MM-YYYY'" :class="{'input': true, 'is-danger': errors.has('date_format') }" name="date_format">
++                      <input type="text" id="birth-date" class="textfield" data-vv-as="Birth day"  v-validate="'required|date_format:DD-MM-YYYY'" :class="{'input': true, 'is-danger': errors.has('date_format') }" name="date_format">
+                     </br>
+                       <span v-show="errors.has('date_format')" class="help is-danger">{{ errors.first('date_format') }}</span>
+                     </p>
+@@ -99,13 +99,21 @@
+                   </div>
+ 
+                   <label for="name-on-card">
+-                    <div class="text text-right">NAME ON CARD</div>
+-                    <input type="text" name="name-on-card" id="name-on-card" class="textfield">
++                    <p :class="{ 'control': true}">
++                      <div class="text text-right">NAME ON CARD</div>
++                      <input type="text" id="name-on-card" class="textfield" data-vv-as="name"  v-validate="'required|alpha'" :class="{'input': true, 'is-danger': errors.has('alpha') }" name="alpha">
++                    </br>
++                      <span v-show="errors.has('alpha')" class="help is-danger">{{ errors.first('alpha') }}</span>
++                    </p>
+                   </label>
+ 
+                   <label for="card-number">
+-                    <div class="text text-right">CARD NUMBER</div>
+-                    <input type="text" name="card-number" id="card-number" class="textfield">
++                    <p :class="{ 'control': true}">
++                      <div class="text text-right">CARD NUMBER</div>
++                      <input type="text"  id="card-number" class="textfield" data-vv-as="card number"  v-validate="'required|numeric'" :class="{'input': true, 'is-danger': errors.has('numeric') }" name="numeric">
++                    </br>
++                      <span v-show="errors.has('numeric')" class="help is-danger">{{ errors.first('numeric') }}</span>
++                    </p>
+                   </label>
+ 
+                   <label for="card-type" class="select-wrapper">
+@@ -160,10 +168,6 @@
+ </template>
+ 
+ <script>
+-import Vue from 'vue'
+-import moment from 'moment'
+-
+-Vue.use(moment)
+ export default {
+   name: 'home'
+ }
+diff --git a/src/components/Login.vue b/src/components/Login.vue
+index 6288a10..93b8530 100644
+--- a/src/components/Login.vue
++++ b/src/components/Login.vue
+@@ -13,7 +13,7 @@
+ 
+           <p :class="{ 'control': true }">
+             <div :class="{ 'control': true }" class="text text-right" for="numeric">BAR CODE NUMBER <span class="smaller">(on the back of your membership card)</span></div>
+-            <input type="text"  id="bar-code-number" v-validate="'required|numeric'" :class="{'input': true, 'is-danger': errors.has('numeric') }" name="numeric">
++            <input type="text"  id="bar-code-number" data-vv-as="barcode number" v-validate="'required|numeric'" :class="{'input': true, 'is-danger': errors.has('numeric') }" name="numeric">
+           </br>
+             <span v-show="errors.has('numeric')" class="help is-danger">{{ errors.first('numeric') }}</span>
+           </p>
+@@ -23,7 +23,7 @@
+         <label for="last-name">
+           <p :class="{ 'control': true}">
+             <div class="text text-right">LAST NAME</div>
+-            <input type="text"  id="last-name" class="textfield" v-validate="'required|alpha'" :class="{'input': true, 'is-danger': errors.has('alpha') }" name="alpha" >
++            <input type="text"  id="last-name" class="textfield" data-vv-as="name" v-validate="'required|alpha'" :class="{'input': true, 'is-danger': errors.has('alpha') }" name="alpha" >
+           </br>
+             <span v-show="errors.has('alpha')" class="help is-danger">{{ errors.first('alpha') }}</span>
+           </p>
+diff --git a/src/main.js b/src/main.js
+index 7ee05cc..fedbfae 100644
+--- a/src/main.js
++++ b/src/main.js
+@@ -2,22 +2,23 @@
+ // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+ import Vue from 'vue'
+ import VueRouter from 'vue-router'
++var moment = require('moment')
++moment().format()
+ Vue.use(VueRouter)
+-import VeeValidate from 'vee-validate'
++import VeeValidate, { Validator } from 'vee-validate'
++Validator.installDateTimeValidators(moment)
+ Vue.use(VeeValidate)
+ import App from './App'
+ import Home from './components/Home'
+ import Login from './components/Login'
+ import Confirmation from './components/Confirmation'
+-import Form from './components/Form'
+ 
+ Vue.config.productionTip = false
+ 
+ const routes = [
+ { path: '/', component: Login },
+ {path: '/home', component: Home},
+-{path: '/confirmation', component: Confirmation},
+-{path: '/form', component: Form}
++{path: '/confirmation', component: Confirmation}
+ ]
+ 
+ const router = new VueRouter({
+-- 
+2.12.2.windows.2
+
