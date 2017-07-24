@@ -49,3 +49,16 @@ export default {
   name: 'app'
 }
 </script>
+
+<style>
+  .help {font-size: 12px;margin-left: 125px;}
+  .is-danger {color:red}
+  @media (max-width: 850px)
+  {
+    .help {margin-left: 29%;}
+  }
+  @media (max-width: 550px)
+  {
+    .help {margin-left: 0;}
+  }
+</style>

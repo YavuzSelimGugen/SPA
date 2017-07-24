@@ -169,16 +169,6 @@
 
 <script>
 export default {
-  name: 'home',
-  data () {
-    return {
-      UserInput: ''
-    }
-  },
-  methods: {
-    GoToRoute: function () {
-      this.$router.push({name: 'Paramdetails', params: { id: this.UserInput }})
-    }
-  }
+  name: 'home'
 }
 </script>
